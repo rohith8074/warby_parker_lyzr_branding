@@ -87,9 +87,9 @@ export function PaymentForm({
         <div className="concierge-payment-chooser">
           <p
             style={{
-              fontFamily: '"DM Sans", system-ui, sans-serif',
+              fontFamily: '"Inter", system-ui, sans-serif',
               fontSize: "0.72rem",
-              color: "#9C968F",
+              color: "#A3968A",
               letterSpacing: "0.06em",
               textTransform: "uppercase",
               textAlign: "center",
@@ -128,8 +128,8 @@ export function PaymentForm({
           <div
             style={{
               borderRadius: "8px",
-              border: "1px solid #E2DDD6",
-              background: "#FAF9F7",
+              border: "1px solid #E7DED4",
+              background: "#FAF7F5",
               padding: "10px 12px",
               display: "flex",
               justifyContent: "space-between",
@@ -140,19 +140,19 @@ export function PaymentForm({
             <div>
               <p
                 style={{
-                  fontFamily: '"DM Sans", system-ui, sans-serif',
+                  fontFamily: '"Inter", system-ui, sans-serif',
                   fontSize: "0.75rem",
                   fontWeight: 600,
-                  color: "#1A3B5D",
+                  color: "#2E1F16",
                 }}
               >
                 {packageTitle ?? "Selected package"}
               </p>
               <p
                 style={{
-                  fontFamily: '"DM Sans", system-ui, sans-serif',
+                  fontFamily: '"Inter", system-ui, sans-serif',
                   fontSize: "0.68rem",
-                  color: "#9C968F",
+                  color: "#A3968A",
                   marginTop: "1px",
                 }}
               >
@@ -161,9 +161,9 @@ export function PaymentForm({
             </div>
             <p
               style={{
-                fontFamily: '"DM Serif Display", Georgia, serif',
+                fontFamily: '"Inter", sans-serif',
                 fontSize: "1.05rem",
-                color: "#1A3B5D",
+                color: "#2E1F16",
                 letterSpacing: "-0.02em",
               }}
             >
@@ -187,40 +187,40 @@ export function PaymentForm({
             </div>
 
             <div className="concierge-gpay-row">
-              <CreditCard size={15} color="#6B6560" strokeWidth={1.75} />
+              <CreditCard size={15} color="#8A7B6C" strokeWidth={1.75} />
               <div style={{ minWidth: 0, flex: 1 }}>
                 <p className="concierge-gpay-line-strong">
                   {selectedWallet === "google_pay" ? "Google Pay Visa •••• 1234" : "Apple Pay Visa •••• 1234"}
                 </p>
                 <p className="concierge-gpay-line-sub">Secure tokenized payment</p>
               </div>
-              <ChevronRight size={14} color="#9C968F" />
+              <ChevronRight size={14} color="#A3968A" />
             </div>
 
             <div className="concierge-gpay-row">
-              <MapPin size={15} color="#6B6560" strokeWidth={1.75} />
+              <MapPin size={15} color="#8A7B6C" strokeWidth={1.75} />
               <div style={{ minWidth: 0, flex: 1 }}>
                 <p className="concierge-gpay-line-strong">{shippingName ?? "Shipping address"}</p>
                 <p className="concierge-gpay-line-sub">
                   {shippingAddress ?? "Address on file from shipping details"}
                 </p>
               </div>
-              <ChevronRight size={14} color="#9C968F" />
+              <ChevronRight size={14} color="#A3968A" />
             </div>
 
             <div className="concierge-gpay-row">
-              <Truck size={15} color="#6B6560" strokeWidth={1.75} />
+              <Truck size={15} color="#8A7B6C" strokeWidth={1.75} />
               <div style={{ minWidth: 0, flex: 1 }}>
                 <p className="concierge-gpay-line-strong">Free Shipping</p>
                 <p className="concierge-gpay-line-sub">Priority overnight delivery</p>
               </div>
-              <ChevronRight size={14} color="#9C968F" />
+              <ChevronRight size={14} color="#A3968A" />
             </div>
           </div>
 
           <div className="concierge-gpay-footer">
             <p className="concierge-gpay-payto">
-              <span style={{ fontFamily: '"DM Sans", system-ui, sans-serif', fontSize: "0.82rem", color: "#6B6560" }}>
+              <span style={{ fontFamily: '"Inter", system-ui, sans-serif', fontSize: "0.82rem", color: "#8A7B6C" }}>
                 Total due
               </span>
               <span>{orderTotal}</span>

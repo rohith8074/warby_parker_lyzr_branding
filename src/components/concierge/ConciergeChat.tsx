@@ -613,7 +613,7 @@ export function ConciergeChat(props: ConciergeConfig = {}) {
               maxHeight: "min(680px, 88vh)",
               borderRadius: "18px",
               background: "#FFFFFF",
-              border: "1px solid #DDD8D0",
+              border: "1px solid #D0C3B5",
               // boxShadow: "0 2px 4px rgba(26,59,93,0.03), 0 8px 24px rgba(26,59,93,0.08), 0 32px 80px rgba(26,59,93,0.14), 0 0 0 0.5px rgba(26,59,93,0.06)",
               transition: "width 300ms cubic-bezier(0.16,1,0.3,1)",
             }}
@@ -623,7 +623,7 @@ export function ConciergeChat(props: ConciergeConfig = {}) {
             <div className="wp-modal-header">
               <div className="wp-modal-header-left">
                 {/* <div className="wp-header-logo-dot">
-                  <Glasses size={15} color="#ffffff" strokeWidth={1.75} />
+                  <Glasses size={15} color="#FFFFFF" strokeWidth={1.75} />
                 </div> */}
                 <div>
                   <p className="wp-modal-title">{title}</p>
@@ -767,16 +767,16 @@ export function ConciergeChat(props: ConciergeConfig = {}) {
               <>
                 <MessageCircle
                   size={18}
-                  color="#ffffff"
+                  color="#FFFFFF"
                   strokeWidth={2}
                   className="transition-transform duration-300 group-hover:-rotate-3 group-hover:scale-110"
                 />
                 <span
                   style={{
-                    fontFamily: '"DM Serif Display", Georgia, serif',
+                    fontFamily: '"Inter", sans-serif',
                     fontSize: "0.95rem",
                     fontWeight: 400,
-                    color: "#ffffff",
+                    color: "#FFFFFF",
                     letterSpacing: "-0.01em",
                   }}
                 >
@@ -787,7 +787,7 @@ export function ConciergeChat(props: ConciergeConfig = {}) {
                     width: "8px",
                     height: "8px",
                     borderRadius: "50%",
-                    background: "#2D7D6F",
+                    background: "#7B4A24",
                     display: "inline-block",
                     boxShadow: "0 0 0 2px rgba(255,255,255,0.3)",
                   }}
@@ -798,16 +798,16 @@ export function ConciergeChat(props: ConciergeConfig = {}) {
               <>
                 <Sparkles
                   size={16}
-                  color="#7EC8C0"
+                  color="#A65A2C"
                   strokeWidth={1.75}
                   className="concierge-animate-sparkle transition-transform duration-300"
                 />
                 <span
                   style={{
-                    fontFamily: '"DM Serif Display", Georgia, serif',
+                    fontFamily: '"Inter", sans-serif',
                     fontSize: "0.95rem",
                     fontWeight: 400,
-                    color: "#ffffff",
+                    color: "#FFFFFF",
                     letterSpacing: "-0.01em",
                   }}
                 >

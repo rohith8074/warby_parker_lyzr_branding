@@ -24,12 +24,12 @@ const NAV_LINKS = [
 ];
 
 const PRODUCTS = [
-  { name: "Alston", price: "$95", color: "Violetwood" },
-  { name: "Kemper", price: "$95", color: "Blue Marblewood" },
-  { name: "Dex", price: "$175", color: "Marine Teal" },
-  { name: "Werner", price: "$95", color: "Rose Water" },
-  { name: "Matilda", price: "$95", color: "Smoky Mauve" },
-  { name: "Scully", price: "$175", color: "Rose Water" },
+  { name: "Alston", price: "$95", color: "Violetwood", image: "/products/alston.jpg" },
+  { name: "Kemper", price: "$95", color: "Blue Marblewood", image: "/products/kemper.jpg" },
+  { name: "Dex", price: "$175", color: "Marine Teal", image: "/products/dex.jpg" },
+  { name: "Werner", price: "$95", color: "Rose Water", image: "/products/werner.jpg" },
+  { name: "Matilda", price: "$95", color: "Smoky Mauve", image: "/products/matilda.jpg" },
+  { name: "Scully", price: "$175", color: "Rose Water", image: "/products/scully.jpg" },
 ];
 
 const BENEFITS = [
@@ -63,12 +63,12 @@ export default function Home() {
 
   return (
     <div
-      className="min-h-screen bg-white text-[#1F1F1F]"
-      style={{ fontFamily: "var(--font-dm-sans), system-ui, sans-serif" }}
+      className="min-h-screen bg-[#FAF7F5] text-[#2E1F16]"
+      style={{ fontFamily: "var(--font-inter), system-ui, sans-serif" }}
     >
       {/* ── Utility bar ── */}
       <header className="w-full">
-        <div className="relative h-8 bg-[#062a78] px-6 text-[11.5px] font-medium tracking-[0.02em] text-white">
+        <div className="relative h-8 bg-[#7B4A24] px-6 text-[11.5px] font-medium tracking-[0.02em] text-[#FAF7F5]">
           <div className="mx-auto flex h-full max-w-[1400px] items-center justify-between">
             <Link
               href="#"
@@ -98,24 +98,24 @@ export default function Home() {
                 <Link
                   key={label}
                   href="#"
-                  className="relative text-[13.5px] font-medium text-[#111111] after:absolute after:bottom-[-2px] after:left-0 after:h-[1.5px] after:w-0 after:bg-[#111111] after:transition-[width] after:duration-200 hover:after:w-full"
+                  className="relative text-[13.5px] font-medium text-[#2E1F16] after:absolute after:bottom-[-2px] after:left-0 after:h-[1.5px] after:w-0 after:bg-[#2E1F16] after:transition-[width] after:duration-200 hover:after:w-full"
                 >
                   {label}
                 </Link>
               ))}
             </nav>
-            <div className="flex items-center gap-4 text-[#242424]">
-              <button className="inline-flex h-[34px] items-center gap-1.5 rounded-full border border-[#d0d0d0] px-4 text-[13px] font-medium hover:border-[#aaaaaa] hover:bg-[#f7f7f7]">
+            <div className="flex items-center gap-4 text-[#2E1F16]">
+              <button className="inline-flex h-[34px] items-center gap-1.5 rounded-full border border-[#D0C3B5] px-4 text-[13px] font-medium hover:border-[#8A7B6C] hover:bg-[#F0E8E1]">
                 <User size={14} strokeWidth={1.8} />
                 <span>Sign in</span>
               </button>
-              <button className="hover:text-[#0050cb]" aria-label="Search">
+              <button className="hover:text-[#A65A2C]" aria-label="Search">
                 <Search size={18} strokeWidth={1.8} />
               </button>
-              <button className="hover:text-[#c0392b]" aria-label="Wishlist">
+              <button className="hover:text-[#DC2626]" aria-label="Wishlist">
                 <Heart size={18} strokeWidth={1.8} />
               </button>
-              <button className="hover:text-[#0050cb]" aria-label="Cart">
+              <button className="hover:text-[#A65A2C]" aria-label="Cart">
                 <ShoppingBag size={18} strokeWidth={1.8} />
               </button>
             </div>
@@ -135,8 +135,8 @@ export default function Home() {
           <div className="mx-auto h-full max-w-[1400px] px-8">
             <div className="flex h-full max-w-[520px] flex-col justify-center pt-8">
               <h1
-                className="text-[54px] leading-[1.04] tracking-[-0.015em] text-[#0d1b2e]"
-                style={{ fontFamily: "var(--font-dm-serif), Georgia, serif" }}
+                className="text-[54px] leading-[1.04] tracking-[-0.015em] text-[#2E1F16]"
+                style={{ fontFamily: "var(--font-inter), sans-serif" }}
               >
                 New pairs, polished
                 <br />
@@ -146,17 +146,17 @@ export default function Home() {
                 <button
                   type="button"
                   onClick={() => styleAdvisorOpenRef.current?.open()}
-                  className="h-[42px] rounded-full bg-[#1557d4] px-6 text-[14px] font-semibold text-white shadow-sm hover:bg-[#1248b8] active:scale-[0.98]"
+                  className="h-[42px] rounded-full bg-[#A65A2C] px-6 text-[14px] font-semibold text-white shadow-sm hover:bg-[#7B4A24] active:scale-[0.98]"
                 >
                   Start with a quiz
                 </button>
-                <button className="h-[42px] rounded-full bg-[#0d1b2e] px-6 text-[14px] font-semibold text-white shadow-sm hover:bg-[#1a2e47] active:scale-[0.98]">
+                <button className="h-[42px] rounded-full bg-[#2C1E14] px-6 text-[14px] font-semibold text-white shadow-sm hover:bg-[#2E1F16] active:scale-[0.98]">
                   Shop eyeglasses
                 </button>
               </div>
               <Link
                 href="#"
-                className="mt-5 inline-flex items-center gap-0.5 text-[14px] font-semibold text-[#1557d4] underline-offset-2 hover:underline"
+                className="mt-5 inline-flex items-center gap-0.5 text-[14px] font-semibold text-[#A65A2C] underline-offset-2 hover:underline"
               >
                 <span>Shop new arrivals</span>
                 <ChevronRight size={15} strokeWidth={2.2} />
@@ -166,12 +166,12 @@ export default function Home() {
         </section>
 
         {/* ── Benefit bar ── */}
-        <div className="h-[44px] border-b border-[#cdd8d6] bg-[#dbe7e5] px-6">
-          <div className="mx-auto grid h-full max-w-[1400px] grid-cols-4 divide-x divide-[#bfd0cc] text-center">
+        <div className="h-[44px] border-b border-[#E7DED4] bg-[#FAF7F5] px-6">
+          <div className="mx-auto grid h-full max-w-[1400px] grid-cols-4 divide-x divide-[#E7DED4] text-center">
             {BENEFITS.map((text) => (
               <div
                 key={text}
-                className="flex items-center justify-center text-[12.5px] font-semibold tracking-[0.01em] text-[#2b6661]"
+                className="flex items-center justify-center text-[12.5px] font-semibold tracking-[0.01em] text-[#7B4A24]"
               >
                 {text}
               </div>
@@ -185,14 +185,14 @@ export default function Home() {
         <section className="pt-14 pb-4">
           <div className="mx-auto mb-7 flex max-w-[1440px] items-end justify-between px-6 lg:px-12">
             <h2
-              className="text-[32px] tracking-[-0.01em] text-[#0d1b2e]"
-              style={{ fontFamily: "var(--font-dm-serif), Georgia, serif" }}
+              className="text-[32px] tracking-[-0.01em] text-[#2E1F16]"
+              style={{ fontFamily: "var(--font-inter), sans-serif" }}
             >
               New arrivals
             </h2>
             <Link
               href="#"
-              className="hidden items-center justify-center rounded-full border border-[#0d1b2e] px-5 py-2 text-[12.5px] font-semibold text-[#0d1b2e] hover:bg-[#0d1b2e] hover:text-white sm:inline-flex"
+              className="hidden items-center justify-center rounded-full border border-[#2E1F16] px-5 py-2 text-[12.5px] font-semibold text-[#2E1F16] hover:bg-[#2E1F16] hover:text-white sm:inline-flex"
             >
               Shop new arrivals
             </Link>
@@ -205,24 +205,29 @@ export default function Home() {
                 className="group min-w-[272px] cursor-pointer snap-start lg:min-w-[300px]"
               >
                 {/* Image placeholder */}
-                <div className="relative mb-3.5 aspect-[4/3] overflow-hidden rounded-xl bg-[#f0f0f0]">
+                <div className="relative mb-3.5 aspect-[4/3] overflow-hidden rounded-xl bg-[#F0E8E1]">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="absolute inset-0 h-full w-full object-contain mix-blend-multiply"
+                  />
                   <button className="absolute bottom-3 right-3 rounded-full bg-white p-2 opacity-0 shadow-md transition-opacity group-hover:opacity-100 hover:bg-gray-50">
-                    <ShoppingBag size={15} className="text-[#0d1b2e]" />
+                    <ShoppingBag size={15} className="text-[#2E1F16]" />
                     <span className="sr-only">Quick add</span>
                   </button>
-                  <div className="absolute left-3 top-3 rounded-sm bg-white px-2 py-[3px] text-[10px] font-bold uppercase tracking-wider text-[#0d1b2e] opacity-0 shadow-sm transition-opacity group-hover:opacity-100">
+                  <div className="absolute left-3 top-3 rounded-sm bg-white px-2 py-[3px] text-[10px] font-bold uppercase tracking-wider text-[#2E1F16] opacity-0 shadow-sm transition-opacity group-hover:opacity-100">
                     Try on
                   </div>
                 </div>
                 {/* Info */}
                 <h3
-                  className="mb-0.5 text-[18px] text-[#0d1b2e]"
-                  style={{ fontFamily: "var(--font-dm-serif), Georgia, serif" }}
+                  className="mb-0.5 text-[18px] text-[#2E1F16]"
+                  style={{ fontFamily: "var(--font-inter), sans-serif" }}
                 >
                   {item.name}
                 </h3>
-                <p className="text-[13px] text-[#666]">{item.color}</p>
-                <p className="mt-0.5 text-[13px] font-semibold text-[#1F1F1F]">{item.price}</p>
+                <p className="text-[13px] text-[#8A7B6C]">{item.color}</p>
+                <p className="mt-0.5 text-[13px] font-semibold text-[#2E1F16]">{item.price}</p>
               </div>
             ))}
           </div>
@@ -231,54 +236,52 @@ export default function Home() {
         {/* ── Collections Grid ── */}
         <section className="mb-1 grid gap-1 md:grid-cols-2">
           {/* Left panel */}
-          <div className="group relative flex aspect-square items-center justify-center overflow-hidden bg-[#d4e2ed] md:aspect-[4/5]">
-            <div
-              className="absolute inset-0 transition-transform duration-700 group-hover:scale-[1.03]"
-              style={{
-                background:
-                  "radial-gradient(ellipse at 60% 40%, #c5d8e6 0%, #b8cedd 60%, #a8bece 100%)",
-              }}
+          <div className="group relative flex aspect-square items-center justify-center overflow-hidden bg-[#E8DCCB] md:aspect-[4/5]">
+            <img 
+              src="/collections/deco.png" 
+              alt="Eyewear with architectural allure" 
+              className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
             />
+            {/* Removed overlay to preserve the clean image background */}
             <div className="relative z-10 p-10 text-center">
-              <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.18em] text-[#4a7a8a]">
+              <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.18em] text-[#7B4A24]">
                 Collection
               </p>
               <h2
-                className="mb-7 text-[40px] leading-[1.08] tracking-[-0.01em] text-[#0d1b2e] lg:text-[48px]"
-                style={{ fontFamily: "var(--font-dm-serif), Georgia, serif" }}
+                className="mb-7 text-[40px] leading-[1.08] tracking-[-0.01em] text-[#2E1F16] lg:text-[48px]"
+                style={{ fontFamily: "var(--font-inter), sans-serif" }}
               >
                 Eyewear with
                 <br />
                 architectural allure
               </h2>
-              <button className="rounded-full border border-[#0d1b2e] px-7 py-2.5 text-[13px] font-semibold text-[#0d1b2e] transition-colors hover:bg-[#0d1b2e] hover:text-white">
+              <button className="rounded-full border border-[#2E1F16] px-7 py-2.5 text-[13px] font-semibold text-[#2E1F16] transition-colors hover:bg-[#2E1F16] hover:text-white">
                 Shop The New Deco
               </button>
             </div>
           </div>
 
           {/* Right panel */}
-          <div className="group relative flex aspect-square items-center justify-center overflow-hidden bg-[#edd4d4] md:aspect-[4/5]">
-            <div
-              className="absolute inset-0 transition-transform duration-700 group-hover:scale-[1.03]"
-              style={{
-                background:
-                  "radial-gradient(ellipse at 40% 60%, #e6c5c5 0%, #ddb8b8 60%, #ceaaa8 100%)",
-              }}
+          <div className="group relative flex aspect-square items-center justify-center overflow-hidden bg-[#F0E6D8] md:aspect-[4/5]">
+            <img 
+              src="/collections/spring.png" 
+              alt="Bring spring into view" 
+              className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
             />
+            {/* Removed overlay to preserve the clean image background */}
             <div className="relative z-10 p-10 text-center">
-              <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.18em] text-[#8a4a4a]">
+              <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.18em] text-[#A65A2C]">
                 Spring 2026
               </p>
               <h2
-                className="mb-7 text-[40px] leading-[1.08] tracking-[-0.01em] text-[#0d1b2e] lg:text-[48px]"
-                style={{ fontFamily: "var(--font-dm-serif), Georgia, serif" }}
+                className="mb-7 text-[40px] leading-[1.08] tracking-[-0.01em] text-[#2E1F16] lg:text-[48px]"
+                style={{ fontFamily: "var(--font-inter), sans-serif" }}
               >
                 Bring spring
                 <br />
                 into view
               </h2>
-              <button className="rounded-full border border-[#0d1b2e] px-7 py-2.5 text-[13px] font-semibold text-[#0d1b2e] transition-colors hover:bg-[#0d1b2e] hover:text-white">
+              <button className="rounded-full border border-[#2E1F16] px-7 py-2.5 text-[13px] font-semibold text-[#2E1F16] transition-colors hover:bg-[#2E1F16] hover:text-white">
                 Shop Spring 2026
               </button>
             </div>
@@ -286,12 +289,12 @@ export default function Home() {
         </section>
 
         {/* ── Footer ── */}
-        <footer className="mt-16 border-t border-[#e2ddd6] bg-[#faf9f7]">
+        <footer className="mt-16 border-t border-[#E7DED4] bg-[#FAF7F5]">
           <div className="mx-auto max-w-[1440px] px-6 py-14 lg:px-12">
             <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
               {FOOTER_COLS.map((col) => (
                 <div key={col.heading}>
-                  <p className="mb-4 text-[11.5px] font-bold uppercase tracking-[0.14em] text-[#1F1F1F]">
+                  <p className="mb-4 text-[11.5px] font-bold uppercase tracking-[0.14em] text-[#2E1F16]">
                     {col.heading}
                   </p>
                   <ul className="space-y-2.5">
@@ -299,7 +302,7 @@ export default function Home() {
                       <li key={link}>
                         <Link
                           href="#"
-                          className="text-[13.5px] text-[#555] hover:text-[#1F1F1F]"
+                          className="text-[13.5px] text-[#8A7B6C] hover:text-[#2E1F16]"
                         >
                           {link}
                         </Link>
@@ -309,12 +312,12 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-[#e2ddd6] pt-8 text-[12px] text-[#888] sm:flex-row">
+            <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-[#E7DED4] pt-8 text-[12px] text-[#8A7B6C] sm:flex-row">
               <p>&copy; {new Date().getFullYear()} Lyzr eye store. All rights reserved.</p>
               <div className="flex gap-5">
-                <Link href="#" className="hover:text-[#1F1F1F]">Privacy Policy</Link>
-                <Link href="#" className="hover:text-[#1F1F1F]">Terms of Use</Link>
-                <Link href="#" className="hover:text-[#1F1F1F]">Accessibility</Link>
+                <Link href="#" className="hover:text-[#2E1F16]">Privacy Policy</Link>
+                <Link href="#" className="hover:text-[#2E1F16]">Terms of Use</Link>
+                <Link href="#" className="hover:text-[#2E1F16]">Accessibility</Link>
               </div>
             </div>
           </div>

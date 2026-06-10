@@ -60,9 +60,9 @@ export function ShippingForm({ onSubmit, onCancel }: ShippingFormProps) {
     <div
       style={{
         padding: "24px 28px 28px",
-        background: "#FAF9F7",
+        background: "#FAF7F5",
         minHeight: "100%",
-        fontFamily: '"DM Sans", system-ui, sans-serif',
+        fontFamily: '"Inter", system-ui, sans-serif',
       }}
     >
       {/* Header */}
@@ -72,7 +72,7 @@ export function ShippingForm({ onSubmit, onCancel }: ShippingFormProps) {
             width: "36px",
             height: "36px",
             borderRadius: "50%",
-            background: "#EDF3F8",
+            background: "#F0E8E1",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -80,7 +80,7 @@ export function ShippingForm({ onSubmit, onCancel }: ShippingFormProps) {
             marginTop: "2px",
           }}
         >
-          <MapPin size={16} color="#1A3B5D" strokeWidth={1.75} />
+          <MapPin size={16} color="#2E1F16" strokeWidth={1.75} />
         </div>
         <div>
           <p
@@ -88,7 +88,7 @@ export function ShippingForm({ onSubmit, onCancel }: ShippingFormProps) {
               fontSize: "0.65rem",
               letterSpacing: "0.14em",
               textTransform: "uppercase",
-              color: "#2D7D6F",
+              color: "#7B4A24",
               fontWeight: 600,
               marginBottom: "3px",
             }}
@@ -97,17 +97,17 @@ export function ShippingForm({ onSubmit, onCancel }: ShippingFormProps) {
           </p>
           <h3
             style={{
-              fontFamily: '"DM Serif Display", Georgia, serif',
+              fontFamily: '"Inter", sans-serif',
               fontSize: "1.4rem",
               fontWeight: 400,
-              color: "#1A3B5D",
+              color: "#2E1F16",
               letterSpacing: "-0.02em",
               lineHeight: 1.2,
             }}
           >
             Where shall we ship?
           </h3>
-          <p style={{ fontSize: "0.82rem", color: "#6B6560", marginTop: "4px", lineHeight: 1.5 }}>
+          <p style={{ fontSize: "0.82rem", color: "#8A7B6C", marginTop: "4px", lineHeight: 1.5 }}>
             Enter your delivery address and we&apos;ll get your frames on their way.
           </p>
         </div>
@@ -181,7 +181,7 @@ export function ShippingForm({ onSubmit, onCancel }: ShippingFormProps) {
         {/* Divider */}
         <div
           style={{
-            borderTop: "1px solid #E2DDD6",
+            borderTop: "1px solid #E7DED4",
             margin: "16px 0",
             display: "flex",
             alignItems: "center",
@@ -193,7 +193,7 @@ export function ShippingForm({ onSubmit, onCancel }: ShippingFormProps) {
               fontSize: "0.65rem",
               letterSpacing: "0.12em",
               textTransform: "uppercase",
-              color: "#9C968F",
+              color: "#A3968A",
               marginTop: "-1px",
               paddingTop: "8px",
               fontWeight: 600,
